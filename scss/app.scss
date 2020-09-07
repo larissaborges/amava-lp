@@ -1,0 +1,119 @@
+@import "~bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;600&display=swap');
+
+body {
+    background-color: rgb(241, 241, 241);
+}
+/* header */ 
+
+// .header {
+//     background-image: url('../assets/Web\ 1920\ –\ 1@2x.png');
+//     height: 30vw;
+//     background-size: 100%;
+//     background-repeat: no-repeat;
+// }
+
+/* services */
+
+.titulo-servicos{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(65, 65, 65);
+    font-size: 30px;
+    font-weight: 400;
+
+}
+.servicos{
+    justify-content: center;
+}
+.servicos, .card{
+    font-family: 'Poppins', sans-serif;
+    margin: 0 15px;
+    text-align: center;
+    padding: 30px 15px;
+    color: rgb(65, 65, 65);
+    border: none;
+}
+.card h1{
+    font-size: 25px;
+    padding-bottom: 15px;
+}
+.card p{
+    font-size: 15px;
+    font-weight: 200;
+}
+// .div-img{
+//     background-color: #674D90;
+//     opacity: 10%;
+//     border-radius: 55px;
+// }
+.card img{
+    width: 20%;
+    padding-bottom: 15px;
+}
+.secao-1{
+    padding: 0px;
+    background-color: white;
+}
+.secao-1-img img{
+    // width: 100%;
+    padding: 0px;
+}
+.secao-1-text{
+    font-family: 'Poppins', sans-serif;
+    color: rgb(65, 65, 65);
+    margin-top: 70px;
+}
+.secao-1-text span{
+    font-weight: 600;
+    font-size: 30px;
+}
+.secao-1-text p, ul{
+    font-size: 15px;
+    font-weight: 300;
+    list-style: none;
+    padding: 20px 0px;
+    margin: 0px !important;
+}
+.secao-1-text ul li{
+    padding: 5px 0px;
+    margin-left: 30px;
+}
+.secao-1-text ul li:before{
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 20px;
+    background: #604D90;
+    position: relative;
+    top: 16px;
+    right: 30px;
+
+}
+.row-style{
+    justify-content: center; 
+    width: 100%; 
+    margin: 0px !important;
+    padding-bottom: 50px;
+}
+.card-div{
+    background-color: rgb(223, 214, 245);
+    font-weight: 200;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+.cta {
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    background-color: #604D90;
+    user-select: none;
+    border-radius: 5px;
+    width: 150%;
+    padding: 0px;
+    height: 40px;
+}
+.cta:hover{
+color: rgb(87, 87, 87);
+}
