@@ -5,7 +5,7 @@
  * Copyright 2011-2020 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500&display=swap");
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -9899,6 +9899,40 @@ body {
 }
 
 /* header */
+body, ul, li, p {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  background-image: url("/Web 1920 – 1@2x.e34ba33a.png");
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: right;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu li {
+  margin-left: 10px;
+}
+
+.menu li a {
+  padding: 10px;
+}
+
 /* services */
 .titulo-servicos {
   text-align: center;
@@ -9934,81 +9968,6 @@ body {
 .card img {
   width: 20%;
   padding-bottom: 15px;
-}
-
-.secao-1 {
-  padding: 0px;
-  background-color: white;
-}
-
-.secao-1-img img {
-  padding: 0px;
-}
-
-.secao-1-text {
-  font-family: "Poppins", sans-serif;
-  color: #414141;
-  margin-top: 70px;
-}
-
-.secao-1-text span {
-  font-weight: 600;
-  font-size: 30px;
-}
-
-.secao-1-text p, ul {
-  font-size: 15px;
-  font-weight: 300;
-  list-style: none;
-  padding: 20px 0px;
-  margin: 0px !important;
-}
-
-.secao-1-text ul li {
-  padding: 5px 0px;
-  margin-left: 30px;
-}
-
-.secao-1-text ul li:before {
-  content: "";
-  display: block;
-  width: 10px;
-  height: 10px;
-  border-radius: 20px;
-  background: #604D90;
-  position: relative;
-  top: 16px;
-  right: 30px;
-}
-
-.row-style {
-  justify-content: center;
-  width: 100%;
-  margin: 0px !important;
-  padding-bottom: 50px;
-}
-
-.card-div {
-  background-color: #dfd6f5;
-  font-weight: 200;
-  margin-bottom: 30px;
-  padding: 10px;
-}
-
-.cta {
-  color: white;
-  font-weight: 400;
-  font-size: 20px;
-  background-color: #604D90;
-  user-select: none;
-  border-radius: 5px;
-  width: 150%;
-  padding: 0px;
-  height: 40px;
-}
-
-.cta:hover {
-  color: #575757;
 }
 
 /*# sourceMappingURL=/app.871a4408.css.map */
