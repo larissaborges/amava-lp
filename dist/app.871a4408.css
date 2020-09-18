@@ -5,7 +5,7 @@
  * Copyright 2011-2020 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;600&display=swap");
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -9896,41 +9896,70 @@ h3 {
 }
 body {
   background-color: #f1f1f1;
+  font-family: "Poppins", sans-serif;
 }
 
 /* header */
-body, ul, li, p {
-  margin: 0px;
-  padding: 0px;
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-.header {
-  background-image: url("/Web 1920 – 1@2x.e34ba33a.png");
-  background-size: 60%;
+.bg-banner {
+  background-image: url("/Web 1920 – 1.de7a4bc1.jpg");
   background-repeat: no-repeat;
-  background-position: right;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 20px;
-  align-items: center;
+  text-align: center;
+  background-size: cover;
 }
 
-.menu {
-  display: flex;
+.chamada-banner {
+  color: #dbdbdb;
+}
+.chamada-banner h1 {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.chamada-banner .chamada-texto {
+  font-size: 20px;
+  font-weight: 500;
+}
+.chamada-banner p {
+  font-size: 15px;
+  font-weight: 300;
 }
 
-.menu li {
-  margin-left: 10px;
+.email-form {
+  width: 50vh;
+  display: inline-block;
+  border-radius: 30px;
+  position: relative;
 }
 
-.menu li a {
-  padding: 10px;
+.email-form .form-control {
+  display: inline-block;
+  border: 1;
+  outline: 0;
+  font-size: 1rem;
+  color: #ddd;
+  background-color: transparent;
+  margin: 0;
+  padding: 2px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+.email-form .submit {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  background-color: #eee;
+  font-size: 1rem;
+  text-align: 1rem;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  color: #333;
+  cursor: pointer;
+  border-radius: 0 20px 20px 0;
 }
 
 /* services */
@@ -9940,9 +9969,11 @@ a {
   color: #414141;
   font-size: 30px;
   font-weight: 400;
+  padding-top: 40px;
 }
 
 .servicos {
+  padding: 50px 0px;
   justify-content: center;
 }
 
@@ -9968,6 +9999,105 @@ a {
 .card img {
   width: 20%;
   padding-bottom: 15px;
+}
+
+.secao-1 {
+  padding: 0px;
+  background-color: white;
+}
+
+.secao-1-img {
+  align-self: center;
+  text-align: center;
+}
+
+.secao-1-img img {
+  padding: 0px;
+}
+
+.secao-1-text {
+  font-family: "Poppins", sans-serif;
+  color: #414141;
+  margin-top: 70px;
+}
+
+.secao-1-text span {
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.secao-1-text p, ul {
+  font-size: 15px;
+  font-weight: 300;
+  list-style: none;
+  padding: 20px 0px;
+  margin: 0px !important;
+}
+
+.secao-1-text ul li {
+  padding: 5px 0px;
+  margin-left: 30px;
+}
+
+.secao-1-text ul li:before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 20px;
+  background: #604D90;
+  position: relative;
+  top: 16px;
+  right: 30px;
+}
+
+.row-style {
+  justify-content: center;
+  width: 100%;
+  margin: 0px !important;
+  padding-bottom: 50px;
+}
+
+.card-div {
+  background-color: #dfd6f5;
+  font-weight: 200;
+  margin-bottom: 30px;
+  padding: 10px;
+}
+
+.cta {
+  color: white;
+  font-weight: 400;
+  font-size: 20px;
+  background-color: #604D90;
+  user-select: none;
+  border-radius: 5px;
+  width: 150%;
+  padding: 0px;
+  height: 40px;
+}
+
+.cta:hover {
+  color: #575757;
+}
+
+@media (min-width: 1900px) {
+  .secao-1-img img {
+    max-width: 70% !important;
+  }
+
+  .secao-1-text {
+    max-width: fit-content;
+  }
+}
+@media (min-width: 2000px) {
+  .secao-1-img img {
+    max-width: 50% !important;
+  }
+
+  .row-style {
+    padding: 0px 600px;
+  }
 }
 
 /*# sourceMappingURL=/app.871a4408.css.map */

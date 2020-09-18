@@ -1,43 +1,69 @@
 @import "~bootstrap/scss/bootstrap";
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;600&display=swap');
 
 body {
     background-color: rgb(241, 241, 241);
+    font-family: 'Poppins', sans-serif;;
 }
 /* header */ 
 
-body, ul, li, p {
-    margin: 0px;
-    padding: 0px;
-    list-style: none;
+ .bg-banner {
+     background-image: url('../assets/Web\ 1920\ –\ 1.jpg');
+     background-repeat: no-repeat;
+     text-align: center;
+     background-size: cover;
+ }
+.chamada-banner{
+    color: rgb(219, 219, 219);
+    h1{
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    .chamada-texto{
+        font-size: 20px;
+        font-weight: 500;
+    }
+    p{
+        font-size: 15px;
+        font-weight: 300;
+    }
 }
-a {
-    text-decoration: none;
+.email-form{
+    width: 50vh;
+    display: inline-block; 
+    border-radius: 30px;
+    position: relative;
 }
-
-.header {
-
-    background-image: url('../assets/Web\ 1920\ –\ 1@2x.png');
-    background-size: 60%;
-    background-repeat: no-repeat;
-    background-position: right;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 20px;
-    align-items: center;
+.email-form .form-control{
+    display: inline-block;
+    border: 1;
+    outline: 0;
+    font-size: 1rem;
+    color: #ddd;
+    background-color: transparent;
+    margin: 0;
+    padding: 2px;
+    height: 40px;
+    border-radius: 20px;
 }
-
-.menu {
-    display: flex;
+.email-form .submit{
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    background-color: #eee;
+    font-size: 1rem;
+    text-align: 1rem;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    color: #333;
+    cursor: pointer;
+    border-radius: 0 20px 20px 0;
 }
-.menu li {
-    margin-left: 10px;
-}
-.menu li a {
-padding: 10px;
-}
-
 /* services */
 
 .titulo-servicos{
@@ -46,9 +72,10 @@ padding: 10px;
     color: rgb(65, 65, 65);
     font-size: 30px;
     font-weight: 400;
-
+    padding-top: 40px;
 }
 .servicos{
+    padding: 50px 0px;
     justify-content: center;
 }
 .servicos, .card{
@@ -67,12 +94,94 @@ padding: 10px;
     font-size: 15px;
     font-weight: 200;
 }
-// .div-img{
-//     background-color: #674D90;
-//     opacity: 10%;
-//     border-radius: 55px;
-// }
 .card img{
     width: 20%;
     padding-bottom: 15px;
+}
+.secao-1{
+    padding: 0px;
+    background-color: white;
+}
+.secao-1-img{
+    align-self: center;
+    text-align: center;
+}
+.secao-1-img img{
+    // width: 100%;
+    padding: 0px;
+}
+.secao-1-text{
+    font-family: 'Poppins', sans-serif;
+    color: rgb(65, 65, 65);
+    margin-top: 70px;
+}
+.secao-1-text span{
+    font-weight: 600;
+    font-size: 30px;
+}
+.secao-1-text p, ul{
+    font-size: 15px;
+    font-weight: 300;
+    list-style: none;
+    padding: 20px 0px;
+    margin: 0px !important;
+}
+.secao-1-text ul li{
+    padding: 5px 0px;
+    margin-left: 30px;
+}
+.secao-1-text ul li:before{
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 20px;
+    background: #604D90;
+    position: relative;
+    top: 16px;
+    right: 30px;
+
+}
+.row-style{
+    justify-content: center; 
+    width: 100%; 
+    margin: 0px !important;
+    padding-bottom: 50px;
+}
+.card-div{
+    background-color: rgb(223, 214, 245);
+    font-weight: 200;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+.cta {
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    background-color: #604D90;
+    user-select: none;
+    border-radius: 5px;
+    width: 150%;
+    padding: 0px;
+    height: 40px;
+}
+.cta:hover{
+color: rgb(87, 87, 87);
+}
+
+@media(min-width: 1900px){
+    .secao-1-img img{
+        max-width: 70% !important;
+    }
+    .secao-1-text{
+        max-width: fit-content;
+    }
+}
+@media(min-width: 2000px){
+    .secao-1-img img{
+        max-width: 50% !important;
+    }
+    .row-style{
+        padding: 0px 600px;
+    }
 }
