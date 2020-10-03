@@ -18886,10 +18886,10 @@ var writer = new Typewriter(target, {
   typeColor: 'white',
   cursorColor: 'white'
 });
-writer.type('Marketing Digital?').rest(500).changeOps({
-  deleteSpeed: 80
-}).remove(18).type('Landing Pages?').rest(500).remove(14).type('Anúncios?').rest(500).changeOps({
-  deleteSpeed: 80
+writer.type('Marketing Digital?').rest(600).changeOps({
+  deleteSpeed: 40
+}).remove(18).type('Landing Pages?').rest(600).remove(14).type('Anúncios?').rest(600).changeOps({
+  deleteSpeed: 40
 }).remove(9).clear().start();
 },{"bootstrap":"../node_modules/bootstrap/dist/js/bootstrap.js","./scss/app.scss":"../scss/app.scss","t-writer.js":"../node_modules/t-writer.js/dist/t-writer.js"}],"../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -18919,7 +18919,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "35853" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "40851" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
