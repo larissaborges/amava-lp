@@ -8,7 +8,7 @@ body {
 /* header */ 
 
  .bg-banner {
-     background-image: url('../assets/Web\ 1920\ –\ 1.jpg');
+     background-image: url('../assets/banner-amava.jpg');
      background-repeat: no-repeat;
      text-align: center;
      background-size: cover;
@@ -166,7 +166,8 @@ body {
     height: 40px;
 }
 .cta:hover{
-color: rgb(87, 87, 87);
+    color:white;
+    background-color: rgb(125, 101, 185);
 }
 .faq {
     text-align: center;
@@ -252,7 +253,6 @@ color: rgb(87, 87, 87);
     background-color: #bdc3c7;
     color: #7f8c8d;
 }
-
 
 @media(min-width: 1900px){
     .secao-1-img img{

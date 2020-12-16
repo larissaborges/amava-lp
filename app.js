@@ -1,5 +1,5 @@
 import 'bootstrap';
-import './scss/app.scss';
+import './src/scss/app.scss';
 const Typewriter = require('t-writer.js');
 
 
